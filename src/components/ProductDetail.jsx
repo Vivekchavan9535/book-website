@@ -22,7 +22,7 @@ function ProductDetail() {
 
   return (
     <>
-      <div className=" h-screen w-full flex pt-28">
+      <div className=" h-screen w-full flex md:pt-28 pt-5">
 
         <div className='w-[100%] xl:h-[90%] xl:w-[100%]  flex flex-col xl:flex-row   '>
 
@@ -36,7 +36,7 @@ function ProductDetail() {
             <h3 className='text-4xl xl:pt-8 font-semibold'>{product.Price}</h3>
             <span className='text-xs'>(Inclusive of all taxes)</span>
 
-            <div className='pt-10'>
+            <div className='pt-10 pb-60'>
 
               <select className='w-14 h-10 border p-2 border-black rounded outline-none' name="quantity" id="quantity">
                 <option value="1">1</option>

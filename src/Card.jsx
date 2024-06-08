@@ -14,12 +14,11 @@ function Card({ name, Rating, Price, image, Author }) {
 
   return (
 
-    <div className='   m-10 p-5 h-[370px] rounded overflow-hidden w-[200px] flex flex-col gap-1'>
+    <div className='   m-10 p-5 min-h-[370px] rounded overflow-hidden w-[200px] flex flex-col gap-1'>
 
-      <img className='object-cover h-[200px]' src={image} alt="" />
-
-
-
+      <div>
+        <img className='object-cover h-[200px]' src={image} alt="" />
+      </div>
 
       <h1 className='text-[18px]  font-bold overflow-hidden whitespace-nowrap text-ellipsis'>{name}</h1>
       <h2 className='text-xs font-semibold'>{Author}</h2>
